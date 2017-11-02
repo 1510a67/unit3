@@ -1,0 +1,119 @@
+.wrap{
+    position: absolute;
+    top:0;
+    bottom:0;
+    width: 100%;
+    font-size: .12rem;
+    display: flex;
+    flex-direction: column;
+    background: #F2F2FE;
+}
+#tab-header{
+    height: .54rem;
+    background: #fff;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    line-height: .54rem;
+    font-size: .14rem;
+    border-bottom: 1px solid #E9E9FD;
+}
+#tab-header span{
+    padding:0 .1rem;
+    border-bottom: 2px solid transparent;
+}
+#tab-header .active{
+    color: #617EF6;
+    border-bottom-color: #617EF6;
+}
+#tab-body{
+    flex-grow: 1;
+    overflow: hidden;
+    overflow-y: auto;
+}
+#tab-body ul{
+    margin-top: .08rem;
+    border-top: 1px solid #E9E9FD;
+    background: #fff;
+}
+#tab-body li{
+    margin:.12rem .24rem .02rem .24rem;
+    border:1px solid #E5E5E5;
+    border-radius: .07rem;
+    height: 1.1rem;
+    max-width: 3.31rem;
+    background-size: 100% 100%;
+    position: relative;
+}
+#tab-body li:nth-child(1){
+    background: url('../img/bg1.png');
+}
+#tab-body li:nth-child(2){
+    background: url('../img/bg2.png');
+}
+#tab-body li:nth-child(3){
+    background: url('../img/bg3.png');
+}
+#tab-body li:nth-child(4){
+    background: url('../img/bg4.png');
+}
+.hide{
+    display: none;
+}
+#tab-body h4{
+    font-size: .24rem;
+    color:#fff;
+    position: absolute;
+    top: .12rem;
+    left: .2rem;
+}
+#tab-body h4 img{
+    width:.2rem;
+    font-weight: lighter;
+}
+#tab-body h1{
+    color:#fff;
+    font-size: .45rem;
+    font-weight: lighter;
+    position: absolute;
+    top: .12rem;
+    line-height: .45rem;
+    left: .57rem;
+}
+#tab-body h3{
+    color:#fff;
+    font-size: .26rem;
+    line-height: .26rem;
+    font-weight: lighter;
+    position: absolute;
+    top: .29rem;
+    right: .13rem;
+}
+#tab-body p{
+    line-height: .16rem;
+    clear: both;
+    position: absolute;
+     left: -.27rem; 
+    width: 3.3rem;
+    transform: scale(.8);
+}
+#tab-body p i{
+    float: left;
+    width: .14rem;
+    height: .14rem;
+    background: url('../img/c.png');
+}
+#tab-body .require{
+    bottom:.24rem;
+    color:#10AD6E;
+}
+#tab-body .require i{
+    background-position: 0 0;
+}
+#tab-body .time{
+    bottom:.06rem;
+    color:#959595;
+}
+#tab-body .time i{
+    background-position: 0 -16px;
+}
